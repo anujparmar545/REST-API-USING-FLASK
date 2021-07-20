@@ -1,0 +1,173 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Planet-Collection",
+		"_postman_id": "5610bfdf-8d61-4a35-80d6-c19647f115b2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Planet",
+			"request": {
+				"url": "localhost:5000/planet",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Planet Details",
+			"request": {
+				"url": "http://localhost:5000/planet_details/6",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Planet",
+			"request": {
+				"url": "http://localhost:5000/add_planet",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "planet_name",
+							"value": "Neptune",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "planet_type",
+							"value": "Hot",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "home_star",
+							"value": "Deimos",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mass",
+							"value": "76.23e44",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "radius",
+							"value": "33099",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "distance",
+							"value": "589.3e6",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "localhost:5000/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "anujparmar545@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Pass123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Planet",
+			"request": {
+				"url": "localhost:5000/update_planet",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "planet_name",
+							"value": "Neptune",
+							"description": ""
+						},
+						{
+							"key": "planet_type",
+							"value": "Hot",
+							"description": ""
+						},
+						{
+							"key": "home_star",
+							"value": "Deimos",
+							"description": ""
+						},
+						{
+							"key": "mass",
+							"value": "76.23e44",
+							"description": ""
+						},
+						{
+							"key": "radius",
+							"value": "33099",
+							"description": ""
+						},
+						{
+							"key": "distance",
+							"value": "59.3e6",
+							"description": ""
+						},
+						{
+							"key": "planet_id",
+							"value": "6",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Planet",
+			"request": {
+				"url": "localhost:5000/remove_planet/6",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
